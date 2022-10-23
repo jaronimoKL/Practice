@@ -1,1 +1,1 @@
-web: gunicorn santehcom.wsgi --log-file
+web: gunicorn Praktika.wsgi --log-file -
