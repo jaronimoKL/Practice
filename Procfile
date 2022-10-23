@@ -1,1 +1,1 @@
-web: gunicorn Praktika.wsgi --log-file -
+pip install dj-database-url
