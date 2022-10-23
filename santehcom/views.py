@@ -65,14 +65,14 @@ def ProductDetail(request, slug):
 
 
 #Слайдер
-# def Recently(request, product_slug):
-#     product = Products.objects.all()
-#     product_slug = Products.slug
-#     context = {
-#         'product': product,
-#         'slug': product_slug,
-#     }
-#     return render(request, "base.html", context=context)
+def Recently(request, product_slug):
+    product = Products.objects.all()
+    product_slug = Products.slug
+    context = {
+        'product': product,
+        'slug': product_slug,
+    }
+    return render(request, "base.html", context=context)
 
 
 #Список категорий
