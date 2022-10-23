@@ -42,7 +42,7 @@ def CatalogList(reqeust):
     category = Category.objects.all()
     rate = Rating.objects.all()
     context = {
-        "products": products,
+        "product": products,
         "rating": rate,
         "subcategory": subcategory,
         "category": category,
