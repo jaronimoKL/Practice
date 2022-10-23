@@ -20,7 +20,7 @@ class Products(models.Model):
     percentage_event = models.IntegerField("Процент акции", blank=True, null=True)
     created = models.DateField("Дата появления товара", default=date.today)
     popular = models.BooleanField("Популярное")
-    image = models.ImageField("Изображение", upload_to="products/%Y/%m/")
+    image = models.ImageField("Изображение", default='products/default.png', upload_to="products/%Y/%m/")
     subcategory = models.ForeignKey('Subcategory', on_delete=models.CASCADE, verbose_name='Подкатегория')
     brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.CASCADE, verbose_name='Бренд')
     rate = models.ForeignKey('Rating', null=True, blank=True, on_delete=models.CASCADE, verbose_name='Оценка')
