@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'cg#p$g+j9tax!#a3cupgertgert356345g345
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kireev-santehcom.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
