@@ -1,1 +1,1 @@
-pip install dj-database-url
+web gunicorn locallibrary.wsgi --log-file -
